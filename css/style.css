@@ -1,0 +1,152 @@
+:root {
+    --main-bg-color:  rgb(26, 163, 178);
+    --bg-white: #FAFAFAFA;
+    --bg-grey: #6B7082;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background:  var(--main-bg-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubble-top {
+    position: absolute;
+    max-width: 100%;
+}
+
+.bubble-bottom {
+    position: absolute;
+    max-width: 100%;
+}
+
+.bubble-1 {
+    transform: translate(-10%, -30%);
+    opacity: 50%;
+    max-width: 100%;
+}
+
+.bubble-2 {
+    transform: translate(100%, 50%);
+    opacity: 50%;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.main {
+    background: #FAFAFA;
+    border-radius: 16px;
+    z-index: 1;
+    max-width: 350px;
+}
+
+.bg-img img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.profile-img img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border: 5px solid #FAFAFA;
+    border-radius: 50%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.text span {
+    color: var(--bg-grey);
+    font-weight: 400;
+}
+
+.ldn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-bottom: 35px;
+    color: var(--bg-grey);
+}
+
+.h-line {
+    border-top: 1px solid #E8E9EC;
+    padding-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 30px;
+}
+
+.info-1 {
+    text-align: center;
+}
+
+.info-2 {
+    text-align: center;
+}
+
+.info-3 {
+    text-align: center;
+}
+
+.info-1 h2,
+.info-2 h2,
+.info-3 h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #2E3349;
+    padding-bottom: 10px;
+}
+
+.info-1 p,
+.info-2 p,
+.info-3 p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    color: #6B7082;
+}
